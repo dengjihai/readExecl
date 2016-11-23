@@ -14,7 +14,7 @@ public class ReadExcelTest {
 		/**
 		 *  type 是响应实体类(resp)，还是请求字段类(req)
 		 */
-		excelUtils.readExcel(pathName,"req");
+		excelUtils.readExcel(pathName,"resp");
 
 
 	}

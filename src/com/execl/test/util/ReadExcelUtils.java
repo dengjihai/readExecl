@@ -111,13 +111,11 @@ public class ReadExcelUtils {
 	}
 
 	public void generateRsp(String str){
-		str = str.substring(1, str.length() - 1);
+		str = str.substring(0, str.length() - 1);
 		String strs[] = str.split(",");
-		if(!strs[0].isEmpty()){
-			String dx = strs[1].substring(0, 1);
-			String houmian = strs[1].substring(1, strs[1].length());
-			System.out.println(" private " + dx + houmian + " " + strs[0]+ "; // " + strs[3]);
-		}
+		System.out.println(" private " + switchDataType(strs[1])
+				+ " " + strs[0]
+				+ "; // " + strs[3]);
 	}
 
 	public static String switchDataType(String type) {

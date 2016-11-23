@@ -13,7 +13,6 @@ public class WriteExcelTest {
 
 
 
-
 	public void test() throws FileNotFoundException, IOException {
 		String pathName = "F:\\ceshi\\wirteExcel.xls";
 		//1.创建一个工作簿Workbook
